@@ -13,5 +13,5 @@ Input current range up to 20mA
 Over-voltage protection
 Programmable Gain Amplifier 
 
-Datasheet:   https://drive.google.com/open?id=1Dt3LqQXQ7Y61j_dJyyZZ_frt3JZHnHb2&usp=drive_fs
-User Guide:  https://drive.google.com/open?id=1hTCIUWFt5H-g2EeVgzgvo3OJW0uJAwjl&usp=drive_fs
+Datasheet:   https://norvi.lk/docs/norvi-ex-ani01-datasheet/
+User Guide:  https://norvi.lk/docs/norvi-ex-ani01-user-guide/
