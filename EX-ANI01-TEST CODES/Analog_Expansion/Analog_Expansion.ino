@@ -7,27 +7,23 @@
 
 Adafruit_ADS1115 ads;
 int analog_value = 0;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
   Serial.println("Testing Analog Input Expansion Module");
 
   Wire.begin(16,17);
- Serial.println("\nI2C Scanner");
-
-  
- if (ads.begin(0x48)) {
+  Serial.println("\nI2C Scanner");
+ 
+  if (ads.begin(0x48)) {
     Serial.println("Failed to initialize ADS.");
-//    while ();
-       
-
- }
- i2c_Check();
+  }
+  i2c_Check();
 }
 
 void loop() {
-
-   // put your main code here, to run repeatedly:
+  // put your main code here, to run repeatedly:
   int16_t adc0, adc1, adc2, adc3;
 
   adc0 = ads.readADC_SingleEnded(0);
@@ -42,15 +38,11 @@ void loop() {
   Serial.print("AIN3: "); Serial.print(adc0); Serial.println("  ");
   delay(300);
   Serial.println("");
-
-
 }
 
 void i2c_Check(){
-
- byte error, address;
+  byte error, address;
   int deviceCount = 0;
-
   Serial.println("Scanning...");
 
   for (address = 1; address < 127; address++) {
@@ -84,7 +76,4 @@ void i2c_Check(){
     Serial.println("Scanning complete\n");
   }
   delay(1000);
-
-   // put your main code here, to run repeatedly:
-
 }
